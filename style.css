@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.esquerda{
+    background-color: #ffffff;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 400px;
+    padding-left: 100px;
+}
+
+.esquerda h1{
+    font-size: 50px;
+    font-weight: bold;
+    width: 400px;
+}
+
+.esquerda p{
+    font-size: 20px;
+    line-height: 1.6;
+    width: 300px;
+    margin: 10px 0;
+}
+
+.esquerda button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: #9499EA;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.esquerda button:hover{
+    opacity: 0.8;
+}
+
+.direita{
+    background-color:rgba(93, 93, 125,0.5);
+    width: 40%;
+    height: 100vh;
+}
+
+.direita img{
+    position: relative;
+    top: 100px;
+    right: 130px;
+}
+
+header{
+    text-align: center;
+    margin-top: 20px;
+}
+
+header a{
+    color: #5D5D7D;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 30px;
+
+}
+
+header a:hover{
+    opacity: 0.5;
+}
+
+header a:nth-child(2){
+    opacity: 0.5;
+}
+
+@media (max-width:930px){
+    .container{
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+     .esquerda{
+        width: 100vw;
+        height: 50vh;
+        padding: 0;
+       align-items: center;
+       justify-content: center;
+       margin-bottom: 10px;
+    }
+
+    .esquerda h1
+    {
+        font-size: 40px;
+        text-align: center;
+        margin: 20px 20px;
+    }
+
+    .esquerda p{
+        font-size: 20px;
+        line-height: 1.6;
+        margin: 20px 20px;
+    }
+
+    .direita{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .direita img{
+        position: static;
+        width: 250px;
+        height: 270px;
+
+    }
+    header{
+        display: none;
+    }
+
+}
